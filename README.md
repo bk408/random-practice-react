@@ -1,8 +1,15 @@
-# React + Vite
+# Pending
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Text color is not working when we toggle the theme button
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+# Implement
+
+
+- About => company profile
+- Contact => with map and contact details
+- Login
+
+- router every component

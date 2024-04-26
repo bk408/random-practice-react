@@ -11,12 +11,12 @@ const Navbar = () => {
   const handleBtn = () => {
     setIsDark(!isDark);
     if (isDark) {
-        document.body.classList.add("bg-black");
-        document.body.classList.remove("bg-white");
+        document.body.classList.add("bg-black", "text-white");
+        document.body.classList.remove("bg-white", "text-black");
      
     } else {
-       document.body.classList.add("bg-white");
-       document.body.classList.remove("bg-black");
+       document.body.classList.add("bg-white", "text-black");
+       document.body.classList.remove("bg-black", "text-white");
     }
   };
 
@@ -94,6 +94,9 @@ const Navbar = () => {
           </li>
           <li className="hover:text-yellow-800 font-medium hover:underline cursor-pointer">
             Contact
+          </li>
+          <li className="hover:text-yellow-800 font-medium hover:underline cursor-pointer">
+            Log in
           </li>
         </ul>
       </nav>
