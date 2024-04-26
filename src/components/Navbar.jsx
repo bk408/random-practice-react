@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isShow, setIsShow] = useState(false);
@@ -86,18 +87,26 @@ const Navbar = () => {
             isShow ? "block" : "hidden"
           } `}
         >
-          <li className="hover:text-yellow-800 font-medium hover:underline cursor-pointer">
-            Home
-          </li>
-          <li className="hover:text-yellow-800 font-medium hover:underline cursor-pointer">
-            About
-          </li>
-          <li className="hover:text-yellow-800 font-medium hover:underline cursor-pointer">
-            Contact
-          </li>
-          <li className="hover:text-yellow-800 font-medium hover:underline cursor-pointer">
-            Log in
-          </li>
+          <Link to="">
+            <li className="hover:text-yellow-800 font-medium hover:underline cursor-pointer">
+              Home
+            </li>
+          </Link>
+          <Link to="/about">
+            <li className="hover:text-yellow-800 font-medium hover:underline cursor-pointer">
+              About
+            </li>
+          </Link>
+          <Link to="/contact">
+            <li className="hover:text-yellow-800 font-medium hover:underline cursor-pointer">
+              Contact
+            </li>
+          </Link>
+          <Link to="/login">
+            <li className="hover:text-yellow-800 font-medium hover:underline cursor-pointer">
+              Log in
+            </li>
+          </Link>
         </ul>
       </nav>
     </div>
